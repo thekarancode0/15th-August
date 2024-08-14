@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            min-height: 100vh;
+        }
+        .saffron{
+            height: 33vh;
+            width: 100%;
+            background-color: #FF9933;
+            animation:swap 4s  linear ;
+
+        }
+        @keyframes swap {
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(5);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+
+        .white{
+            height: 33vh;
+        }
+
+        .green{
+            background-color: #128807;
+            height: 33vh;
+            animation:swap1  4s  linear ;
+        }
+        @keyframes swap1 {
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(5);
+            }
+            100%{
+                transform: scale(1);
+            }
+            
+        }
+        .chakra img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            bottom: 50%;
+            translate: -50% -50%;
+            width: 350px;
+            animation:rotate 15s 5s infinite ease-in;
+        }
+
+        @keyframes rotate {
+            0%{
+                transform: rotate(0);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        @media (max-width:600px){
+            body{
+                overflow: hidden;
+            }
+           .chakra img{
+            width: 330px;
+           }
+            
+        }
+
+        audio{
+            opacity: 0;
+            position: absolute;
+            top: 0;
+        }
+
+        </style>
+</head>
+<body>
+    <div class="main">
+        <div class="saffron"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="chakra"><img src="ashoka-chakra-png-46978.png" alt=""></div>
+        <audio src="audi0.mpeg" controls autoplay loop></audio>
+    </div>
+</body>
+</html>
