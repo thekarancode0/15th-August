@@ -11,7 +11,8 @@
             padding: 0;
         }
         body{
-            min-height: 100vh;
+            height: 100vh;
+            overflow: hidden;
         }
         .saffron{
             height: 33vh;
@@ -57,6 +58,7 @@
             position: absolute;
             top: 50%;
             left: 50%;
+            bottom: 50%;
             translate: -50% -50%;
             width: 350px;
             animation:rotate 15s 5s infinite ease-in;
@@ -74,6 +76,7 @@
         @media (max-width:600px){
             body{
                 overflow: hidden;
+                height: 100vh;
             }
            .chakra img{
             width: 330px;
@@ -82,7 +85,7 @@
         }
 
         audio{
-            opacity: 0;
+            opacity: 100;
             position: absolute;
             top: 0;
         }
